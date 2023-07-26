@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruits House</title>
+  <title>Fruits Burst</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <!-- Daisy UI cnd -->
@@ -29,29 +29,56 @@
 
 <body class="font-lato">
   <header>
-    <nav class="">
-      <div class="navbar  flex justify-between max-w-5xl mx-auto bg-[#F85559] rounded-2xl mt-5 ">
-        <!-- menus -->
-        <div class="flex-1 flex-col md:flex-row gap-4 ">
-          <a class=" text-white normal-case text-sm">Home</a>
-          <a class=" text-white normal-case text-sm">About</a>
-          <a class=" text-white normal-case text-sm">Shop</a>
-          <a class=" text-white normal-case text-sm">All Fruits</a>
+    <!-- nav -->
+    <div class="navbar flex justify-between max-w-5xl mx-auto bg-[#F85559] rounded-2xl mt-5 ">
+      
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <!-- Dropwon  -->
+      <div class=" flex-1 ">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
         </div>
         <!-- logo -->
-        <div class="pl-8 flex-1">
-          <img class="w-8" src="./images/logo.png" alt="">
-          <span class="text-white pl-2">Fruit Burst</span>
-        </div>
-        <!-- search -->
-        <div class="flex-none gap-2 flex-1">
-          <div class="form-control">
-            <input type="text" placeholder="Search" class="input input-bordered rounded-2xl w-24 h-7 md:w-auto" />
+        <div class="flex-1 pl-0  md:pl-[128px]">
+          <div class=" flex items-center flex-row">
+            <img class="w-8" src="./images/logo.png" alt="">
+            <p class="text-white   pl-2">Fruit Burst</p>
           </div>
-
         </div>
       </div>
-    </nav>
+      <!-- search -->
+      <div class="flex-none gap-2 flex-1">
+        <div class="form-control   hidden md:flex lg:flex">
+          <input type="text" placeholder="Search  " class="input input-bordered rounded-2xl w-24 h-7   md:w-auto "  />
+          
+        </div>
+        <!-- srch icon -->
+        <p>
+          <button class="btn btn-ghost btn-circle absolute -ml-[60px] -mt-[25px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+        </p>
+      </div>
+
+    </div>
+   
+   
+   
     <!-- Hero Section -->
     <section class="max-w-5xl mx-auto mt-8  ">
       <div class="carousel  ">
