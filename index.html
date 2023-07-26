@@ -93,7 +93,8 @@
             <div>
               <div class=" ">
                 <div class="">
-                  <h2 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white text-center">Exotic tastes at your
+                  <h2 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white text-center">Exotic tastes at
+                    your
                     <br> doorstep
                   </h2>
                   <p class="text-white text-xs font-thin text-center mt-2">We supply highly quality organic products</p>
@@ -116,7 +117,8 @@
             <div>
               <div class="  ">
                 <div class="">
-                  <h2 class=" text-xl md:text-2xl lg:text-3xl font-extrabold text-white text-center">Exotic tastes at your
+                  <h2 class=" text-xl md:text-2xl lg:text-3xl font-extrabold text-white text-center">Exotic tastes at
+                    your
                     <br> doorstep
                   </h2>
                   <p class="text-white text-xs font-thin text-center mt-2">We supply highly quality organic products</p>
@@ -139,7 +141,8 @@
             <div>
               <div class=" ">
                 <div class="">
-                  <h2 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white text-center">Exotic tastes at your
+                  <h2 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white text-center">Exotic tastes at
+                    your
                     <br> doorstep
                   </h2>
                   <p class="text-white text-xs font-thin text-center mt-2">We supply highly quality organic products</p>
@@ -201,7 +204,7 @@
       <!-- card box -->
       <div class="mt-10 text-center space-x-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <!-- first card -->
-        <div class=" border-2 rounded-lg">
+        <div class=" border-2 rounded-lg mx-3 my-2 md:mx-3 my-3 lg:mx-0 my-0">
           <div class="flex items-center justify-center mt-5"> <img class="mb-5 " src="./images/fruit6.png" alt=""></div>
           <h3 class="mb-5 text-xl font-bold">12.90$ - 18.85$</h3>
           <hr>
@@ -215,11 +218,37 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- a tag for under  card box open -->
-          <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p>
+          <!-- <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p> -->
+
+          <p> <button class="text-[#F85559] mb-5" onclick="my_modal_5.showModal()">Details</button></p>
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+
+            <form method="dialog" class="modal-box w-[380px] mr-5 mb-8 md:w-[450px]">
+              <!-- img+title+p+btn -->
+              <div class="flex justify-center my-5"><img src="./images/fruit6.png" alt=""></div>
+              <h3 class="text-2xl font-extrabold ">Apples</h3>
+              <p class="py-4 text-sm font-thin">Professional employees are there for you to pick the <br> most amazing
+                and fresh fruits.</p>
+              <div class="rating mb-5 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="modal-action flex justify-center gap-3">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn btn-outline btn-error ">Close</button>
+                <button class="btn text-white bg-[#F85559]">Bye Now</button>
+              </div>
+            </form>
+          </dialog>
+
 
         </div>
         <!-- second card -->
-        <div class=" border-2 rounded-lg">
+        <div class=" border-2 rounded-lg mx-3 my-2 md:mx-3 my-3 lg:mx-0 my-0">
           <div class="flex items-center justify-center mt-3"> <img class="mb-5 " src="./images/fruit7.png" alt=""></div>
           <h3 class="mb-5 text-xl font-bold">12.90$ - 18.85$</h3>
           <hr>
@@ -233,11 +262,36 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- a tag for under  card box open -->
-          <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p>
+          <!-- <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p> -->
+          <p> <button class="text-[#F85559] mb-5" onclick="my_modal_6.showModal()">Details</button></p>
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+
+            <form method="dialog" class="modal-box w-[380px] mr-5 mb-8 md:w-[450px]">
+              <!-- img+title+p+btn -->
+              <div class="flex justify-center my-5"><img src="./images/fruit7.png" alt=""></div>
+              <h3 class="text-2xl font-extrabold ">Orange</h3>
+              <p class="py-4 text-sm font-thin">Professional employees are there for you to pick the <br> most amazing
+                and fresh fruits.</p>
+              <div class="rating mb-5 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="modal-action flex justify-center gap-3">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn btn-outline btn-error ">Close</button>
+                <button class="btn text-white bg-[#F85559]">Bye Now</button>
+              </div>
+            </form>
+          </dialog>
+          
 
         </div>
         <!-- third card -->
-        <div class=" border-2 rounded-lg">
+        <div class=" border-2 rounded-lg mx-3 my-2 md:mx-3 my-3 lg:mx-0 my-0">
           <div class="flex items-center justify-center mt-5"> <img class="mb-5 " src="./images/fruit8.png" alt=""></div>
           <h3 class="mb-5 text-xl font-bold">12.90$ - 18.85$</h3>
           <hr>
@@ -251,11 +305,36 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- a tag for under  card box open -->
-          <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p>
+          <!-- <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p> -->
+          <p> <button class="text-[#F85559] mb-5" onclick="my_modal_7.showModal()">Details</button></p>
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+
+            <form method="dialog" class="modal-box w-[380px] mr-5 mb-8 md:w-[450px]">
+              <!-- img+title+p+btn -->
+              <div class="flex justify-center my-5"><img src="./images/fruit8.png" alt=""></div>
+              <h3 class="text-2xl font-extrabold ">Red Dragon
+              </h3>
+              <p class="py-4 text-sm font-thin">Professional employees are there for you to pick the <br> most amazing
+                and fresh fruits.</p>
+              <div class="rating mb-5 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="modal-action flex justify-center gap-3">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn btn-outline btn-error ">Close</button>
+                <button class="btn text-white bg-[#F85559]">Bye Now</button>
+              </div>
+            </form>
+          </dialog>
 
         </div>
         <!-- fourth card -->
-        <div class=" border-2 rounded-lg">
+        <div class=" border-2 rounded-lg mx-3 my-2 md:mx-3 my-3 lg:mx-0 my-0">
           <div class="flex items-center justify-center mt-5"> <img class="mb-5 " src="./images/fruit9.png" alt=""></div>
           <h3 class="mb-5 text-xl font-bold">12.90$ - 18.85$</h3>
           <hr>
@@ -269,7 +348,31 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- a tag for under  card box open -->
-          <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p>
+          <!-- <p class="text-[#F85559] mb-5"><a class="" href="">Details</a> </p> -->
+          <p> <button class="text-[#F85559] mb-5" onclick="my_modal_8.showModal()">Details</button></p>
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+
+            <form method="dialog" class="modal-box w-[380px] mr-5 mb-8 md:w-[450px]">
+              <!-- img+title+p+btn -->
+              <div class="flex justify-center my-5"><img src="./images/fruit9.png" alt=""></div>
+              <h3 class="text-2xl font-extrabold ">Banana</h3>
+              <p class="py-4 text-sm font-thin">Professional employees are there for you to pick the <br> most amazing
+                and fresh fruits.</p>
+              <div class="rating mb-5 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="modal-action flex justify-center gap-3">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn btn-outline btn-error ">Close</button>
+                <button class="btn text-white bg-[#F85559]">Bye Now</button>
+              </div>
+            </form>
+          </dialog>
 
         </div>
       </div>
